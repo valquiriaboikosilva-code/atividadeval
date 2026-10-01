@@ -47,6 +47,11 @@ footer{
 
 .cartao-interno {
     position: relative;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+}
+.cartao-hover .cartao-interno {
+    transform: rotateY(180deg);
 }
 
 .cartao-frente, .cartao-verso {
@@ -54,7 +59,18 @@ footer{
     border-radius: 12px;
     box-shadow: 0 6px 12px rgb(240, 119, 119);
 }
-
+.cartao-verso {
+    transform: rotateY(180deg);
+}
+header{
+    background-color: brown;
+    padding: 15px 25px;
+    color: aliceblue;
+}
+section{
+    display: flex;
+    gap: 16px;
+}
 
 fazer 2 video
 
