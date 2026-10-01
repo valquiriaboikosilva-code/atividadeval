@@ -8,7 +8,7 @@ padding: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: rgb(44, 9, 9);
+background-color: rgb(253, 113, 113);
 }
  .cartao {
 width: 260px;
@@ -22,7 +22,7 @@ body {
 display: flex;
 flex-direction: column;
 min-height: 100vh;
-background-color: rgb(206, 206, 255);
+background-color: rgb(243, 109, 172);
 }
 
 main {
@@ -32,7 +32,7 @@ flex-direction: column;
 align-items: center;
 }
 .cabecalho-link{
-    color: rgb(77, 19, 8);
+    color: rgb(241, 91, 129);
     text-decoration: none;
 }
 h1{
@@ -40,7 +40,7 @@ h1{
     font-size: 24px;
 }
 footer{
-    background-color: rgb(43, 5, 5);
+    background-color: rgb(247, 113, 113);
     padding: 15px 25px;
     color: rgb(242, 238, 245);
 }
@@ -52,7 +52,7 @@ footer{
 .cartao-frente, .cartao-verso {
     position: absolute;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba( 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgb(240, 119, 119);
 }
 
 
