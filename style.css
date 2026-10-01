@@ -1,0 +1,134 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.cacecalho {
+    padding: 15px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(63, 6, 6);
+}
+ .cartao {
+width: 260px;
+height: 200px;
+}
+
+.cartao-imagem {
+width: 100%;
+}
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: rgb(189, 189, 248);
+}
+
+main {
+flex: 1;
+}
+.cabecalho-link{
+    color: rgb(54, 218, 141);
+    text-decoration: none;
+}
+h1{
+    color: aliceblue;
+    font-size: 24px;
+}
+footer{
+    background-color: rgb(81, 12, 145);
+    padding: 15px 25px;
+    color: rgb(242, 238, 245);
+}
+
+.cartao-interno {
+    position: relative;
+}
+
+.cartao-frente, .cartao-verso {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba( 0, 0, 0.15);
+}
+
+
+fazer 2 video
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.cabecalho {
+padding: 15px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+ background-color: rgb(87, 155, 146);
+}
+
+ .cartao {
+width: 260px;
+height: 200px;
+}
+
+.cartao-imagem {
+width: 100%;
+}
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: rgb(189, 189, 248);
+}
+
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.cabecalho-link{
+    color: rgb(54, 218, 141);
+    text-decoration: none;
+}
+h1{
+    color: aliceblue;
+    font-size: 24px;
+}
+footer{
+    background-color: rgb(81, 12, 145);
+    padding: 15px 25px;
+    color: rgb(242, 238, 245);
+}
+
+.cartao-interno {
+    position: relative;
+    transition: transfom 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cartao-hover .cartao-interno {
+transform: rotate(180deg);
+}
+.cartao-frente, .cartao-verso {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba( 0, 0, 0.15);
+    backface-visibility: hidden;
+}
+.cartao-verso {
+    transform: rotateY(180deg);
+}
+header{
+     background-color: rgb(81, 12, 145);
+    padding: 15px 25px;
+    color: rgb(242, 238, 245);
+
+}
+
+section {
+    display: flex;
+    gap: 16px;
+}
