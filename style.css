@@ -1,94 +1,138 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+corrija meu codigo.  * {
+margin: 0;
+padding: 0;
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(203, 203, 252);
-}
-
-header,
-.cabecalho {
+.cacecalho {
     padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(59, 6, 6);
-    color: aliceblue;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(253, 113, 113);
 }
-
-.cabecalho-link {
-    color: rgb(48, 5, 5);
+ .cartao {
+width: 260px;
+height: 200px;
+}
+.cartao-imagem {
+width: 100%;
+}
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: rgb(243, 109, 172);
+}
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.cabecalho-link{
+    color: rgb(241, 91, 129);
     text-decoration: none;
 }
-
-h1 {
+h1{
     color: aliceblue;
     font-size: 24px;
 }
-
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer{
+    background-color: rgb(247, 113, 113);
+    padding: 15px 25px;
+    color: rgb(242, 238, 245);
 }
-
-section {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* ===== CARTÃO COM EFEITO DE GIRO ===== */
-.cartao {
-    width: 260px;
-    height: 200px;
-    perspective: 1000px; /* Necessário para o efeito 3D */
-}
-
 .cartao-interno {
-    width: 100%;
-    height: 100%;
     position: relative;
-    transition: transform 0.8s;
+    transition: 0.8s;
     transform-style: preserve-3d;
 }
-
-/* Quando passar o mouse no cartão, ele gira */
-.cartao:hover .cartao-interno {
+.cartao-hover .cartao-interno {
     transform: rotateY(180deg);
 }
-
-.cartao-frente,
-.cartao-verso {
+.cartao-frente, .cartao-verso {
     position: absolute;
-    width: 100%;
-    height: 100%;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    backface-visibility: hidden; /* Esconde o lado de trás */
-    overflow: hidden;
+    box-shadow: 0 6px 12px rgb(240, 119, 119);
 }
-
 .cartao-verso {
     transform: rotateY(180deg);
 }
-
-.cartao-imagem {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+header{
+    background-color: brown;
+    padding: 15px 25px;
+    color: aliceblue;
 }
-
-footer {
+section{
+    display: flex;
+    gap: 16px;
+}
+fazer 2 video
+* {
+margin: 0;
+padding: 0;
+}
+.cabecalho {
+padding: 15px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+ background-color: rgb(71, 19, 10);
+}
+ .cartao {
+width: 260px;
+height: 200px;
+}
+.cartao-imagem {
+width: 100%;
+}
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: rgb(203, 203, 252);
+}
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.cabecalho-link{
+    color: rgb(48, 5, 5);
+    text-decoration: none;
+}
+h1{
+    color: aliceblue;
+    font-size: 24px;
+}
+footer{
     background-color: rgb(87, 7, 7);
     padding: 15px 25px;
     color: rgb(242, 238, 245);
+}
+.cartao-interno {
+    position: relative;
+    transition: transfom 0.8s;
+    transform-style: preserve-3d;
+}
+.cartao-hover .cartao-interno {
+transform: rotate(180deg);
+}
+.cartao-frente, .cartao-verso {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba( 0, 0, 0.15);
+    backface-visibility: hidden;
+}
+.cartao-verso {
+    transform: rotateY(180deg);
+}
+header{
+     background-color: rgb(59, 6, 6);
+    padding: 15px 25px;
+    color: rgb(242, 238, 245);
+}
+section {
+    display: flex;
+    gap: 16px;
 }
