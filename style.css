@@ -1,11 +1,10 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Cabeçalho */
 .cabecalho {
     padding: 15px 25px;
     display: flex;
@@ -24,7 +23,6 @@ h1 {
     font-size: 24px;
 }
 
-/* Corpo */
 body {
     display: flex;
     flex-direction: column;
@@ -32,7 +30,6 @@ body {
     background-color: rgb(203, 203, 252);
 }
 
-/* Conteúdo principal */
 main {
     flex: 1;
     display: flex;
@@ -40,7 +37,6 @@ main {
     align-items: center;
 }
 
-/* Dois cartões lado a lado */
 section {
     display: flex;
     gap: 16px;
@@ -48,14 +44,12 @@ section {
     flex-wrap: wrap;
 }
 
-/* Cartão */
 .cartao {
     width: 260px;
     height: 200px;
     perspective: 1000px;
 }
 
-/* Parte interna que faz a rotação */
 .cartao-interno {
     position: relative;
     width: 100%;
@@ -64,12 +58,10 @@ section {
     transform-style: preserve-3d;
 }
 
-/* Gira o cartão quando passar o mouse */
 .cartao:hover .cartao-interno {
     transform: rotateY(180deg);
 }
 
-/* Frente e verso */
 .cartao-frente,
 .cartao-verso {
     position: absolute;
@@ -81,26 +73,22 @@ section {
     overflow: hidden;
 }
 
-/* Imagem ou vídeo */
 .cartao-imagem {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Verso começa virado */
 .cartao-verso {
     transform: rotateY(180deg);
 }
 
-/* Rodapé */
 footer {
     background-color: rgb(87, 7, 7);
     padding: 15px 25px;
     color: rgb(242, 238, 245);
 }
 
-/* Cabeçalho alternativo */
 header {
     background-color: rgb(59, 6, 6);
     padding: 15px 25px;
